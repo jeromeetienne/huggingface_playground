@@ -1,0 +1,18 @@
+{
+  "name": "huggingface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@huggingface/inference": "^1.8.0",
+    "@xenova/transformers": "^2.6.2",
+    "langchain": "^0.0.167"
+  }
+}
