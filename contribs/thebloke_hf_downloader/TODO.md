@@ -7,3 +7,5 @@
   - ```npx thebloke_hf_downloader -m zephyr-7B-alpha-GGUF```
 - [ ] put all that in its own repo
   - it has nothing to do with huggingface_playground
+- [ ] rename it to 'llamacpp-download' ? YES
+  - seems definitly a better name

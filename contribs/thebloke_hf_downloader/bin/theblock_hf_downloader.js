@@ -14,6 +14,7 @@ import * as HfHub from "@huggingface/hub";
 import CliColor from 'cli-color'
 import * as Commander from "commander"
 
+
 // local imports 
 import Utils from '../src/utils.js'
 
@@ -55,10 +56,11 @@ async function mainAsync() {
 	// parse command line
 	const cmdline = new Commander.Command()
 	cmdline.name(`${Path.basename(__filename)}`)
-		.version('0.0.3')
-		.description(`Play with CSV files and LlamaCpp models.`)
-	// cmdline.usage('[options]')
+	const MyPackageJson = JSON.parse(await Fs.promises.readFile(Path.join(__dirname, '../package.json'), 'utf8'))
+	cmdline.version(MyPackageJson.version)
+	cmdline.description(`Play with CSV files and LlamaCpp models.`)
 
+	// add command line options
 	cmdline.option('-s, --maxFileSizeGbyte <number>', 'the maximum size of the file in Gbyte. Used to pick the higuest level of quantization supported.', parseFloat)
 	cmdline.requiredOption('-m, --modelName <string>', 'the name of the model e.g. "TheBloke/zephyr-7B-alpha-GGUF"')
 	cmdline.addOption(new Commander.Option('-q, --quantizationMethod <string>', 'the level of quantisation e.g. "Q6_K"').choices(quantizationMethods))
