@@ -1,0 +1,6 @@
+- [x] add quantisation option
+- [x] handle the model selection with it
+- [ ] create a npm for it
+  - https://zellwk.com/blog/publish-to-npm/
+- [ ] test npx for it
+- [ ] what about npm development

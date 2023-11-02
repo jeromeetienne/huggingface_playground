@@ -4,12 +4,11 @@
 
 import { HfInference } from "@huggingface/inference";
 
-// sanity check - make sure the HF_ACCESS_TOKEN environment variable is set
-console.assert(process.env.HF_ACCESS_TOKEN, 'Please set the HF_ACCESS_TOKEN environment variable')
+// sanity check - make sure the HUGGINGFACEHUB_API_KEY environment variable is set
+console.assert(process.env.HUGGINGFACEHUB_API_KEY, 'Please set the HUGGINGFACEHUB_API_KEY environment variable')
 
 // Create an instance of the Hugging Face Inference API client
-const HF_ACCESS_TOKEN = process.env.HF_ACCESS_TOKEN;
-const inference = new HfInference(HF_ACCESS_TOKEN);
+const inference = new HfInference(process.env.HUGGINGFACEHUB_API_KEY);
 
 // generate text
 const result = await inference.textGeneration({

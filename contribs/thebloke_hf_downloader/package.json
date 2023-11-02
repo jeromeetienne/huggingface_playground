@@ -1,0 +1,31 @@
+{
+  "name": "thebloke_hf_downloader",
+  "version": "1.0.0",
+  "description": "Simple downloader for llama-cpp models from thebloke's github repo.",
+  "main": "hf_hub_thebloke_downloader.js",
+  "type": "module",
+  "entry": "./bin/theblock_hf_downloader.js",
+  "engines": {
+    "node": "18.x"
+},
+  "scripts": {
+    "sample": "./bin/theblock_hf_downloader.js -m TheBloke/zephyr-7B-alpha-GGUF -s 8",
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeromeetienne/huggingface_playground.git"
+  },
+  "keywords": [
+    "hugging-face",
+    "downloader",
+    "thebloke",
+    "llama-cpp"
+  ],
+  "author": "jerome.etienne@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "np": "^8.0.4"
+  }
+}
