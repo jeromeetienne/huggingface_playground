@@ -1,6 +1,6 @@
 {
   "name": "thebloke_hf_downloader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple downloader for llama-cpp models from thebloke's github repo.",
   "main": "hf_hub_thebloke_downloader.js",
   "type": "module",
@@ -11,7 +11,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "release":"np",
+    "release": "np",
     "sample": "./bin/theblock_hf_downloader.js -m TheBloke/zephyr-7B-alpha-GGUF -s 8",
     "test": "echo \"Error: no test specified\""
   },
@@ -28,7 +28,11 @@
   "author": "jerome.etienne@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "commander": "^11.1.0",
+    "@huggingface/hub": "^0.11.3",
+    "cli-color": "^2.0.3",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
     "np": "^8.0.4"
   }
 }
