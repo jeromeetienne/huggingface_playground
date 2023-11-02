@@ -11,3 +11,12 @@ llma-cpp is about runinng models locally, so it makes sense to focus on download
   - use node-llama-cpp chat on it
 
 
+## Usage
+
+Download "zephyr-7B-alpha-GGUF" model with quantisation "Q6_K"
+
+```
+npx thebloke_hf_downloader -m TheBloke/zephyr-7B-alpha-GGUF -q Q6_K
+```
+
+
