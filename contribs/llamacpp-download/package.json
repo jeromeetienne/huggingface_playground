@@ -1,18 +1,18 @@
 {
   "name": "thebloke_hf_downloader",
-  "version": "1.0.3",
-  "description": "Simple downloader for llama-cpp models from thebloke's github repo.",
+  "version": "1.0.4",
+  "description": "Easily download models for llama-cpp in a single line.",
   "main": "hf_hub_thebloke_downloader.js",
   "type": "module",
   "bin": {
-    "thebloke_hf_downloader": "./bin/theblock_hf_downloader.js"
+    "llamacpp-download": "./bin/llamacpp-download.js"
   },
   "engines": {
     "node": "18.x"
   },
   "scripts": {
     "release": "np",
-    "sample": "./bin/theblock_hf_downloader.js -m TheBloke/zephyr-7B-alpha-GGUF -s 8",
+    "sample": "./bin/llamacpp-download.js -m TheBloke/zephyr-7B-alpha-GGUF -s 8",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {

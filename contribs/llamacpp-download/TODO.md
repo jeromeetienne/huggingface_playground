@@ -3,6 +3,8 @@
 - [ ] put all that in its own repo
   - it has nothing to do with huggingface_playground
 
+---
+
 - [x] add quantisation option
 - [x] handle the model selection with it
 - [x] create a npm for it

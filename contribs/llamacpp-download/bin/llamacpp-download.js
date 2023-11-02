@@ -6,7 +6,6 @@
 
 // node imports
 import Fs from 'fs';
-import ChildProcess from 'child_process';
 import Path from 'path'
 
 // npm imports
@@ -98,7 +97,9 @@ async function mainAsync() {
 
 	let fileEntries = await Utils.fileList(modelEntry.name)
 
-	let fileEntryToDownload = null
+	// @ts-ignore
+	let fileEntryToDownload =/** @type {HfHub.ListFileEntry}*/(null)
+
 	// filter file entries to keep only the ones that are smaller or equal than the maxFileSizeGbyte
 	if (cmdlineOptions.maxFileSizeGbyte !== undefined) {
 		const maxFileSizeByte = cmdlineOptions.maxFileSizeGbyte * 1024 * 1024 * 1024

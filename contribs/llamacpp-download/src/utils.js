@@ -21,6 +21,7 @@ export default class Utils {
                 const credentials = { accessToken: HUGGINGFACEHUB_API_KEY }
                 return credentials
         }
+        
         static async modelList() {
                 // get all models
                 const modelList = /** @type {HfHub.ModelEntry[]} */([])
