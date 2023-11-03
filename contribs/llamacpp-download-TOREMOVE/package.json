@@ -1,6 +1,6 @@
 {
   "name": "thebloke_hf_downloader",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Easily download models for llama-cpp in one line.",
   "main": "hf_hub_thebloke_downloader.js",
   "type": "module",

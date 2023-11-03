@@ -1,3 +1,5 @@
+Moved to [llamacpp-download](https://github.com/jeromeetienne/llamacpp-download) repository
+
 # llama-cpp Download
 [llama-cpp](https://github.com/ggerganov/llama.cpp) is a project to run models locally on your computer.
 But downloading models is a bit of a pain. This package is here to help you with that.
